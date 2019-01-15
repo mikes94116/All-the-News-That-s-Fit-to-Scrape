@@ -19,9 +19,13 @@
   "homepage": "https://github.com/mikes94116/All-the-News-That-s-Fit-to-Scrape#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "cherio": "^1.0.0-rc.2",
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
-    "mongoose": "^5.4.3"
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.3",
+    "mongoose-unique-validator": "^2.0.2",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
   }
 }

@@ -25,9 +25,11 @@ app
 // ------------------------------------------------------------------------- mongoose
 
 mongoose.Promise = Promise;
-const dbURI = process.env.MONGODB_URI || "mongodb://localhost:27017/news";
+// const dbURI = process.env.MONGODB_URI || mongoose.connect(MONGODB_URI);
 
-mongoose.connect(dbURI);
+// | "mongodb://localhost:27017/news";
+
+mongoose.connect("mongodb://user:user19@ds137100.mlab.com:37100/scraper", {useNewUrlParser: true});
 const db = mongoose.connection;
 db.on("error", function(error) {
     console.log("Mongoose Error: ", error);
